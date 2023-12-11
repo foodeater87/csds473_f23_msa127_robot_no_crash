@@ -1,0 +1,4 @@
+<launch>
+  <param name="wall_dist" value="0.5" type="double" />
+  <node name="control_node" type="robot_no_crash_node" pkg="robot_no_crash" output="screen" ns="robot0" />
+</launch>

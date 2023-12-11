@@ -1,0 +1,6 @@
+<launch>
+  <param name="wall_dist" value="0.5" type="double" />
+  <include file="$(find robot_no_crash)/launch/robot_supervisor.launch" ns="/robot0" />
+  <include file="$(find stdr_launchers)/launch/server_with_map_and_gui.launch" />
+  <node name="rqt_gui" type="rqt_gui" pkg="rqt_gui" output="screen"/>
+</launch>
